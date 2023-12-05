@@ -5,5 +5,6 @@
     ./nix.nix
     ./kernel.nix
     ./boot.nix
+    ./time.nix
   ];
 }
