@@ -26,7 +26,6 @@
                 settings = {
                   allowDiscards = true;
                   bypassWorkqueues  = true;
-                  fallbackToPassword = true;
                 };
 
                 content = {

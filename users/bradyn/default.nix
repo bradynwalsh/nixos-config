@@ -5,5 +5,5 @@
     initialPassword = "correcthorsebatterystaple";
     isNormalUser = true;
     extraGroups = ["wheel"];
-  }
+  };
 }

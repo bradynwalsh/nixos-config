@@ -3,7 +3,7 @@
 {
   programs.git.enable = true;
 
-  envrionment.systemPackages = [
+  environment.systemPackages = [
 
   ];
 }

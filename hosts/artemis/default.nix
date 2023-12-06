@@ -7,7 +7,7 @@
     ../modules/desktop
   ];
 
-  networking.hostname = "artemis";
+  networking.hostName = "artemis";
 
   system.stateVersion = "23.11";
 }
