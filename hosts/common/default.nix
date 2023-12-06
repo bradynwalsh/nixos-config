@@ -6,5 +6,6 @@
     ./kernel.nix
     ./boot.nix
     ./time.nix
+    ./corePackages.nix
   ];
 }

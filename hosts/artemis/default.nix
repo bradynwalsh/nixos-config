@@ -1,8 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
     ./disks.nix
+    ../modules/common
     ../modules/desktop
   ];
 

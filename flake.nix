@@ -8,21 +8,39 @@
 
     disko = {
       url = "github:nix-community/disko";
-      nixpkgs.follows = "nixpkgs";
-    }
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follow = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, disko }: {
+  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, ... }@inputs: {
     nixosConfigurations.artemis = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = [
         disko.nixosModules.disko
 
         ./hosts/artemis
-        ./hosts/common
         nixos-hardware.nixosModules.framework-12th-gen-intel
 
         ./users/bradyn
+
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+
+          home-manager.users.bradyn = import ./users/bradyn/home.nix;
+        }
       ];
     };
   };
