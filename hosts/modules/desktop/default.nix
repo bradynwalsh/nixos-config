@@ -4,5 +4,6 @@
   imports = [
     ./sound.nix
     ./graphics.nix
+    ./networking.nix
   ];
 }
