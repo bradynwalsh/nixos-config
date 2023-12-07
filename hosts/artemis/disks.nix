@@ -1,3 +1,5 @@
+{ config, lib, pkgs, inputs, ... }:
+
 {
   disko.devices = {
     disk = {
@@ -32,7 +34,7 @@
                   type = "btrfs";
                   extraArgs = [ "-f" ];
 
-                  postMountHook = import ../modules/secureboot/postMountHook.nix;
+                  postMountHook = import ../modules/secureboot/postMountHook.nix pkgs.sbctl;
 
                   subvolumes = {
                     "@/nix" = {
