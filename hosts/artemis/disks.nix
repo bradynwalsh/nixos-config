@@ -34,7 +34,7 @@
                   type = "btrfs";
                   extraArgs = [ "-f" ];
 
-                  postMountHook = import ../modules/secureboot/postMountHook.nix pkgs.sbctl;
+                  postMountHook = import ../modules/secureboot/postMountHook.nix ( pkgs );
 
                   subvolumes = {
                     "@/nix" = {

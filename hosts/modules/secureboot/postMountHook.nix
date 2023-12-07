@@ -1,9 +1,9 @@
-{ sbctl, ... }:
+{ pkgs, ... }:
 
 # Create and Enroll SecureBoot Keys on partition creation
 ''
-${sbctl} create-keys
-${sbctl} enroll-keys -t
+${pkgs.sbctl} create-keys
+${pkgs.sbctl} enroll-keys -t
 
 mkdir /mnt/persist/secureboot
 cp /etc/secureboot /mnt/persist/secureboot
