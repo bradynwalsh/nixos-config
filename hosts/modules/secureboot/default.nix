@@ -9,6 +9,13 @@
 
   boot.lanzaboot = {
     enable = true;
-    pkiBundle = "/usr/share/secureboot";
+    pkiBundle = "/etc/secureboot";
+  };
+
+  environment.persistance."/persist/secureboot" = {
+    hideMounts = true;
+    directories = [
+      "/etc/secureboot"
+    ];
   };
 }
