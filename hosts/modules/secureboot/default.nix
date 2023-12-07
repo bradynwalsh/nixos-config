@@ -7,12 +7,12 @@
 
   boot.loader.systemd-boot.enable = lib.mkForce false;
 
-  boot.lanzaboot = {
+  boot.lanzaboote = {
     enable = true;
     pkiBundle = "/etc/secureboot";
   };
 
-  environment.persistance."/persist/secureboot" = {
+  environment.persistence."/persist/secureboot" = {
     hideMounts = true;
     directories = [
       "/etc/secureboot"

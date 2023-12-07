@@ -32,6 +32,8 @@
                   type = "btrfs";
                   extraArgs = [ "-f" ];
 
+                  postMountHook = import ../modules/secureboot/postMountHook.nix;
+
                   subvolumes = {
                     "@/nix" = {
                       mountpoint = "/nix";
@@ -40,8 +42,6 @@
                     "@/persist" = {
                       mountpoint = "/persist";
                       mountOptions = [ "compress=zstd" "noatime" ];
-
-                      postMountHook = import ../modules/secureboot/postMountHook.nix;
                     };
                   };
                 };
@@ -60,5 +60,5 @@
     };
   };
 
-  filesystems."/persist".neededForBoot = true;
+  fileSystems."/persist".neededForBoot = true;
 }

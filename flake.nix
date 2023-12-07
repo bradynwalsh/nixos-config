@@ -21,24 +21,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    lanzaboot = {
-      url = "github:nix-community/lanzaboot";
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     impermanence = {
       url = "github:nix-community/impermanence";
-      inputs.nixpkgs.follows = "nixpkgs";
-    }
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboot, impermanence, ... }@inputs: {
+  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboote, impermanence, ... }@inputs: {
     nixosConfigurations.artemis = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = [
         disko.nixosModules.disko
-        lanzaboot.nixosModules.lanzaboot
+        lanzaboote.nixosModules.lanzaboote
         impermanence.nixosModules.impermanence
 
         ./hosts/artemis
