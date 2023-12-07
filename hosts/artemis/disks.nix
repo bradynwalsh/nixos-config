@@ -40,6 +40,8 @@
                     "/persist" = {
                       mountpoint = "/persist";
                       mountOptions = [ "compress=zstd" "noatime" ];
+
+                      postMountHook = import ../modules/secureboot/postMountHook.nix;
                     };
                   };
                 };

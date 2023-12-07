@@ -20,14 +20,20 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    lanzaboot = {
+      url = "github:nix-community/lanzaboot";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboot, ... }@inputs: {
     nixosConfigurations.artemis = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = [
         disko.nixosModules.disko
+        lanzaboot.nixosModules.lanzaboot
 
         ./hosts/artemis
         nixos-hardware.nixosModules.framework-12th-gen-intel

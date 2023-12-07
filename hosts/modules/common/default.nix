@@ -7,5 +7,6 @@
     ./boot.nix
     ./time.nix
     ./corePackages.nix
+    ./fwupd.nix
   ];
 }

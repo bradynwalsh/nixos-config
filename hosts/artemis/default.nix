@@ -5,6 +5,7 @@
     ./disks.nix
     ../modules/common
     ../modules/desktop
+    ../modules/secureboot
   ];
 
   networking.hostName = "artemis";
