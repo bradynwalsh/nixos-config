@@ -2,9 +2,13 @@
 
 # Create and Enroll SecureBoot Keys on partition creation
 ''
+MNTPOINT=$(mktemp -d)
+mount /dev/mapper/crypt "$MNTPOINT" -o subvol=@persist
+trap 'umount $MNTPOINT; rm -rf $MNTPOINT' EXIT
+
 ${pkgs.sbctl}/bin/sbctl create-keys
 ${pkgs.sbctl}/bin/sbctl enroll-keys --yes-this-might-brick-my-machine
 
-mkdir /mnt/persist/secureboot
-cp /etc/secureboot /mnt/persist/secureboot
+mkdir "$MNTPOINT/secureboot"
+cp /etc/secureboot "$MNTPOINT/secureboot"
 ''
