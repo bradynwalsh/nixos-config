@@ -30,11 +30,11 @@
                   bypassWorkqueues  = true;
                 };
 
+                postMountHook = import ../modules/secureboot/postMountHook.nix ( pkgs );
+
                 content = {
                   type = "btrfs";
                   extraArgs = [ "-f" ];
-
-                  postMountHook = import ../modules/secureboot/postMountHook.nix ( pkgs );
 
                   subvolumes = {
                     "@nix" = {
