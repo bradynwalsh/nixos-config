@@ -10,5 +10,5 @@ ${pkgs.sbctl}/bin/sbctl create-keys
 ${pkgs.sbctl}/bin/sbctl enroll-keys --yes-this-might-brick-my-machine
 
 mkdir -p "$MNTPOINT/secureboot/etc/secureboot"
-cp -r /etc/secureboot/ "$MNTPOINT/secureboot/etc/secureboot"
+cp -r /etc/secureboot/* "$MNTPOINT/secureboot/etc/secureboot"
 ''
