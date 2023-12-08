@@ -9,7 +9,7 @@
         content = {
           type = "gpt";
 
-          postCreateHook = import ../modules/secureboot/postCreateHook.nix ( pkgs );
+          postCreateHook = import ../modules/secureboot/postCreateHook.nix  pkgs "/dev/nvme0n1p1";
 
           partitions = {
             ESP = {

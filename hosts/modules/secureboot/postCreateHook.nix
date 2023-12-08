@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, espPartition, ... }:
 
 # Create and Enroll SecureBoot Keys on partition creation
 ''
@@ -11,4 +11,7 @@ ${pkgs.sbctl}/bin/sbctl enroll-keys --yes-this-might-brick-my-machine
 
 mkdir -p "$MNTPOINT/secureboot/etc/secureboot"
 cp -r /etc/secureboot "$MNTPOINT/secureboot/etc"
+
+mkdir /boot
+mount ${espPartition} /boot
 ''
