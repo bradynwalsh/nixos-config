@@ -14,4 +14,5 @@ cp -r /etc/secureboot "$MNTPOINT/secureboot/etc"
 
 mkdir /boot
 mount ${espPartition} /boot
+mkdir /boot/EFI
 ''
