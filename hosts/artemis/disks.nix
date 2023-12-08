@@ -8,6 +8,9 @@
         device = "/dev/nvme0n1";
         content = {
           type = "gpt";
+
+          postMountHook = import ../modules/secureboot/postMountHook.nix ( pkgs );
+
           partitions = {
             ESP = {
               type = "EF00";
@@ -29,8 +32,6 @@
                   allowDiscards = true;
                   bypassWorkqueues  = true;
                 };
-
-                postMountHook = import ../modules/secureboot/postMountHook.nix ( pkgs );
 
                 content = {
                   type = "btrfs";
