@@ -9,7 +9,7 @@
 
   boot.lanzaboote = {
     enable = true;
-    pkiBundle = "/etc/secureboot";
+    pkiBundle = "/persist/secureboot/etc/secureboot";
   };
 
   environment.persistence."/persist/secureboot" = {
