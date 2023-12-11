@@ -5,7 +5,7 @@
     enable = true;
 
     profiles.bradyn = {
-      extensions = with pkgs.inputs.firefox-addons; [
+      extensions = with inputs.firefox-addons; [
         ublock-origin
       ];
     };
