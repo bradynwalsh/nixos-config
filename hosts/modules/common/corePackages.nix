@@ -5,6 +5,6 @@
   programs.ssh.startAgent = true;
 
   environment.systemPackages = [
-
+    pkgs.ripgrep
   ];
 }
