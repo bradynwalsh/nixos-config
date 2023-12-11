@@ -4,6 +4,7 @@
   imports = [
     ../applications/helix.nix
     ../applications/git.nix
+    ../applications/lsp.nix
     ../modules/desktop
   ];
 
