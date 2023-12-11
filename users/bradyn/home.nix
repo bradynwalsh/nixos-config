@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ../applications/firefox.nix
     ../applications/helix.nix
+    ../modules/desktop
   ];
 
   home.username = "bradyn";
