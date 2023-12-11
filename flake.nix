@@ -29,6 +29,11 @@
     impermanence = {
       url = "github:nix-community/impermanence";
     };
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboote, impermanence, ... }@inputs: {
