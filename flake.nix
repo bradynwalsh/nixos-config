@@ -54,6 +54,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = specialArgs;
 
           home-manager.users.bradyn = import ./users/bradyn/home.nix;
         }
