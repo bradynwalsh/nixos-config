@@ -3,6 +3,7 @@
 {
   imports = [
     ../applications/helix.nix
+    ../applications/git.nix
     ../modules/desktop
   ];
 
