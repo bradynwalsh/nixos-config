@@ -54,7 +54,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs };
+          home-manager.extraSpecialArgs = { inherit inputs; };
 
           home-manager.users.bradyn = import ./users/bradyn/home.nix;
         }
