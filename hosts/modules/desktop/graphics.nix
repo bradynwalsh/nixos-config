@@ -18,9 +18,16 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time -r --cmd Hyprland";
         user = "greeter";
       };
     };
+  };
+
+  environment.persistence."/persist/config/greetd" = {
+    hideMounts = true;
+    directories = [
+      "/var/cache/tuigreet"
+    ];
   };
 }
