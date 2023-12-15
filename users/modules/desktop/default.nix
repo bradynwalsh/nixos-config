@@ -5,5 +5,6 @@
     ./wofi.nix
     ./kitty.nix
     ./firefox.nix
+    ./hyprland.nix
   ];
 }
