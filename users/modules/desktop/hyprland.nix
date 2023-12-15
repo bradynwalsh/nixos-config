@@ -43,5 +43,37 @@
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
     ];
+
+    monitor = [
+      ",highres,auto,1"
+    ];
+
+    general = {
+      gaps_in = 5;
+      gaps_out = 20;
+
+      border_size = 2;
+
+      "col.active_border"   = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+      "col.inactive_border" = "rgba(595959aa)";
+
+      layout = "dwindle";
+    };
+
+    decoration = {
+      rounding = 10;
+
+      blur = {
+        enabled = true;
+        size = 3;
+        passes = 1;
+        vibrancy = 0.1696;
+      };
+
+      drop_shadow = true;
+      shadow_range = 4;
+      shadow_render_power = 3;
+      "col.shadow" = "rgba(1a1a1aee)";
+    };
   };
 }
