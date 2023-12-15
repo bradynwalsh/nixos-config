@@ -5,7 +5,7 @@
 
   wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
-    "$menu" = "wofi --show drun";
+    "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
 
     env = "XCURSOR_SIZE,24";
 
