@@ -19,12 +19,4 @@
   ];
 
   programs.home-manager.enable = true;
-
-  home.persistence."/persist/home/bradyn" = {
-    directories = [
-      ".ssh"
-      "Documents"
-    ];
-    allowOther = true;
-  };
 }
