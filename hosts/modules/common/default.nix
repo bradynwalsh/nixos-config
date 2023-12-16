@@ -8,5 +8,6 @@
     ./time.nix
     ./corePackages.nix
     ./fwupd.nix
+    ./impermanence.nix
   ];
 }
