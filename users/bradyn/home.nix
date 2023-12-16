@@ -1,7 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports = [
+    inputs.impermanence.nixosModules.home-manager.impermanence
+
     ../applications/helix.nix
     ../applications/git.nix
     ../applications/lsp.nix
@@ -17,4 +19,12 @@
   ];
 
   programs.home-manager.enable = true;
+
+  home.persistence."/persist/home/bradyn" = {
+    directories = [
+      ".ssh"
+      "Documents"
+    ];
+    allowOther = true;
+  };
 }
