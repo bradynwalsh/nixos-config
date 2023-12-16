@@ -19,12 +19,4 @@
   ];
 
   programs.home-manager.enable = true;
-
-  home.persistence."/persist" = {
-    allowOther = true;
-    directories = [
-      ".ssh"
-      "Documents"
-    ];
-  };
 }
