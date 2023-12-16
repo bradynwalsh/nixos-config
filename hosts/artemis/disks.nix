@@ -67,4 +67,5 @@
   };
 
   fileSystems."/persist".neededForBoot = true;
+  fileSystems."/".neededForBoot = true;
 }
