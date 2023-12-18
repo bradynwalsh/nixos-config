@@ -8,6 +8,10 @@
       extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
         ublock-origin
       ];
+
+      settings = {
+        "extensions.autoDisableScopes" = 0; # Auto-enable installed extensions
+      };
     };
   };
 }
