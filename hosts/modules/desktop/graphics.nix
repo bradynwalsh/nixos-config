@@ -30,4 +30,12 @@
       "/var/cache/tuigreet"
     ];
   };
+
+  # Persist fingerprints for tuigreet
+  environment.persistence."/persist/config/fprintd" = {
+    hideMounts = true;
+    directories = [
+      "/var/lib/fprint"
+    ];
+  };
 }
