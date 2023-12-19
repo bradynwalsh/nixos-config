@@ -17,6 +17,10 @@
   home.packages = [
     pkgs.htop
     pkgs.glances
+    pkgs.bat
+    pkgs.eza
+    pkgs.fd
+    pkgs.fzf
   ];
 
   programs.home-manager.enable = true;
