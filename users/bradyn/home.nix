@@ -16,6 +16,7 @@
 
   home.packages = [
     pkgs.htop
+    pkgs.glances
   ];
 
   programs.home-manager.enable = true;
