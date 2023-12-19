@@ -91,6 +91,4 @@
       { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
     ];
   };
-
-  config.services.swayosd.enable = true;
 }
