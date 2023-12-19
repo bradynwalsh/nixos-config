@@ -78,4 +78,17 @@
       "col.shadow" = "rgba(1a1a1aee)";
     };
   };
+
+  config.services.swayidle = {
+    enable = true;
+
+    timeouts = [
+      { timeout = 60; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
+      { timeout = 120; command = "${pkgs.systemd}/bin/systemctl suspend"; }
+    ];
+
+    events = [
+      { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
+    ];
+  };
 }
