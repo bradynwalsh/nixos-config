@@ -1,9 +1,9 @@
 { conifg, lib, pkgs, ... }:
 
 {
-  wayland.windowManager.hyprland.enable = true;
+  config.wayland.windowManager.hyprland.enable = true;
 
-  wayland.windowManager.hyprland.settings = {
+  config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
     "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
     "$lock" = "swaylock -f";
