@@ -5,5 +5,6 @@
     ./sound.nix
     ./graphics.nix
     ./networking.nix
+    ./lock.nix
   ];
 }

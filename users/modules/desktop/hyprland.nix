@@ -6,6 +6,7 @@
   wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
     "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
+    "$lock" = "swaylock -f";
 
     env = "XCURSOR_SIZE,24";
 
@@ -15,6 +16,7 @@
       "$mod, Q, exec, $terminal"
       "$mod, C, killactive"
       "$mod, M, exit"
+      "$mod, L, exec, $lock"
       "$mod, V, togglefloating"
       "$mod, R, exec, $menu"
       "$mod, P, pseudo"

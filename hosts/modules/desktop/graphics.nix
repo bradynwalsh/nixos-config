@@ -38,4 +38,7 @@
       "/var/lib/fprint"
     ];
   };
+
+  # Enable changing screen brightness
+  programs.light.enable = true;
 }
