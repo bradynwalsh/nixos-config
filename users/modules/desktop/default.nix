@@ -6,5 +6,6 @@
     ./kitty.nix
     ./firefox.nix
     ./hyprland.nix
+    ./fonts.nix
   ];
 }
