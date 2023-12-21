@@ -7,5 +7,6 @@
     ./firefox.nix
     ./hyprland.nix
     ./fonts.nix
+    ./mako.nix
   ];
 }
