@@ -8,5 +8,6 @@
     ./hyprland.nix
     ./fonts.nix
     ./mako.nix
+    ./bar.nix
   ];
 }
