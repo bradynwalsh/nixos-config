@@ -42,7 +42,7 @@
     systemd.enable = true;
 
     style = ''
-      {
+      * {
         border: none;
         font-family: Roboto Mono SemiBold, "Isoevka Nerd Font";
         font-size: 20px;
