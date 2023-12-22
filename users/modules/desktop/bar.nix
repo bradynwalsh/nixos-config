@@ -34,8 +34,9 @@
         };
 
         clock = {
+          timezones = ["Australia/Adelaide" "UTC"];
           interval = 1;
-          format = "{: %R   %d/%m}";
+          format = "{: %R %Z   %d/%m}";
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
 
