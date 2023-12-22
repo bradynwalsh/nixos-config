@@ -42,7 +42,7 @@
         "custom/weather" = {
           interval = 1800;
           format = "{}";
-          exec = "curl \"wttr.in?format=%I+%c+%t\"";
+          exec = "${pkgs.curl}/bin/curl \"wttr.in?format=%I+%c+%t\"";
         };
 
         battery = {
