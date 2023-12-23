@@ -119,7 +119,7 @@
       }
 
       #window.empty {
-        display: none;
+        background-color: transparent;
       }
 
       #workspaces button.active {
