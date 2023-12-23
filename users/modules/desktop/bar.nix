@@ -53,7 +53,9 @@
           };
 
           format = "{capacity}% {icon}";
+          format-icons = ["" "" "" "" ""];
           format-plugged = "{capacity}% ";
+          format-charging = "{capacity}% ⚡";
         };
 
         wireplumber = {
@@ -114,6 +116,10 @@
         margin-right: 5px;
         padding: 0px 10px 0px 10px;
         font-weight: bold;     
+      }
+
+      #window.empty {
+        display: none;
       }
 
       #workspaces button.active {
