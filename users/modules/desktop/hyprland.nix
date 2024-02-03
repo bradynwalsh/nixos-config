@@ -6,7 +6,7 @@
   config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
     "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
-    "$lock" = "swaylock -f";
+    "$lock" = "swaylock -f -i ${./lockscreen.png}";
 
     env = "XCURSOR_SIZE,24";
 
@@ -93,16 +93,22 @@
     ];
 
     events = [
-      { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
+      { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF -i ${./lockscreen.png}"; }
     ];
   };
 
   config.home.packages = [
     inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
+    pkgs.networkmanagerapplet
   ];
 
   config.xdg.configFile."hypr/hyprpaper.conf".text = ''
     preload = ${./wallpaper.png}
     wallpaper = ,${./wallpaper.png}
   '';
+
+  config.gtk.iconTheme = {
+    package = pkgs.gnome.adwaita-icon-theme;
+    name = "adwaita-icon-theme";
+  };
 }
