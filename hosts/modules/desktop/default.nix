@@ -6,5 +6,6 @@
     ./graphics.nix
     ./networking.nix
     ./lock.nix
+    ./bluetooth.nix
   ];
 }
