@@ -9,5 +9,6 @@
     ./fonts.nix
     ./mako.nix
     ./bar.nix
+    ./thunar.nix
   ];
 }

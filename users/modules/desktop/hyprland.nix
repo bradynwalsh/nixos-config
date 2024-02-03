@@ -1,4 +1,4 @@
-{ conifg, lib, pkgs, ... }:
+{ conifg, lib, pkgs, inputs, ... }:
 
 {
   config.wayland.windowManager.hyprland.enable = true;
@@ -12,6 +12,7 @@
 
     exec-once = [
       "mako"
+      "hyprpaper"
     ];
 
     "$mod" = "SUPER";
@@ -87,7 +88,7 @@
     enable = true;
 
     timeouts = [
-      { timeout = 60; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
+      { timeout = 60; command = "${pkgs.swaylock}/bin/swaylock -fF -i ${./lockscreen.png}"; }
       { timeout = 120; command = "${pkgs.systemd}/bin/systemctl suspend"; }
     ];
 
@@ -95,4 +96,13 @@
       { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
     ];
   };
+
+  config.home.packages = [
+    inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
+  ];
+
+  config.xdg.configFile."hypr/hyprpaper.conf".text = ''
+    preload = ${./wallpaper.png}
+    wallpaper = ,${./wallpaper.png}
+  '';
 }
