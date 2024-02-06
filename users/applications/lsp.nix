@@ -4,5 +4,6 @@
   # LSP language server packages
   home.packages = [
     pkgs.nil
+    pkgs.marksman
   ];
 }

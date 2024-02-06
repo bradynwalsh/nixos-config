@@ -5,6 +5,7 @@
     ./wofi.nix
     ./kitty.nix
     ./firefox.nix
+    ./chromium.nix
     ./hyprland.nix
     ./fonts.nix
     ./mako.nix

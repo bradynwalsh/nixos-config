@@ -7,6 +7,7 @@
     ../applications/helix.nix
     ../applications/git.nix
     ../applications/lsp.nix
+    ../applications/vscode.nix
     ../modules/terminal
     ../modules/desktop
   ];
