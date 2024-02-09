@@ -4,6 +4,6 @@
   users.users.bradyn = {
     initialPassword = "correcthorsebatterystaple";
     isNormalUser = true;
-    extraGroups = ["wheel"];
+    extraGroups = ["wheel" "vboxusers" "qemu-libvirtd" "libvirtd"];
   };
 }

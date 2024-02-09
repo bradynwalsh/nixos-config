@@ -7,5 +7,6 @@
     ./networking.nix
     ./lock.nix
     ./bluetooth.nix
+    ./virtualization.nix
   ];
 }

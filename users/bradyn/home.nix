@@ -8,6 +8,7 @@
     ../applications/git.nix
     ../applications/lsp.nix
     ../applications/vscode.nix
+    ../applications/boxes.nix
     ../modules/terminal
     ../modules/desktop
   ];
