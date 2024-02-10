@@ -11,5 +11,6 @@
     ./mako.nix
     ./bar.nix
     ./thunar.nix
+    ./bluetooth.nix
   ];
 }
