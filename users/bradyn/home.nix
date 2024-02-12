@@ -9,6 +9,7 @@
     ../applications/lsp.nix
     ../applications/vscode.nix
     ../applications/boxes.nix
+    ../applications/discord.nix
     ../modules/terminal
     ../modules/desktop
   ];
@@ -32,6 +33,7 @@
     directories = [
       "Documents"
       ".ssh"
+      ".config/discord"
     ];
     allowOther = true;
   };
