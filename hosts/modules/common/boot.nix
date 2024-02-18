@@ -7,9 +7,5 @@
   boot.initrd.systemd.enable = true;
 
   # Persist Machine ID across boots
-  environment.persistence."/persist/config/machine-id" = {
-    hideMounts = true;
-
-    files = ["/etc/machine-id"];
-  };
+  environment.etc."machine-id".source = "/persist/machine-id";
 }
