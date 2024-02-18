@@ -6,6 +6,7 @@
     ../modules/common
     ../modules/desktop
     ../modules/secureboot
+    ../modules/tailscale
   ];
 
   networking.hostName = "artemis";
