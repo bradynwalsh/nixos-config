@@ -10,6 +10,6 @@
   environment.persistence."/persist/config/machine-id" = {
     hideMounts = true;
 
-    files = ["/etc/machine-id"]
+    files = ["/etc/machine-id"];
   };
 }
