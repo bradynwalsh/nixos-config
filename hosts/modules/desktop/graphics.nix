@@ -13,6 +13,11 @@
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
+  # Install xdg utils
+  environment.systemPackages = [
+    pkgs.xdg-utils
+  ];
+
   # Use tuigreet
   services.greetd = {
     enable = true;
