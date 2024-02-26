@@ -10,6 +10,11 @@
   networking.nameservers = ["100.100.100.100" "1.1.1.1" "8.8.8.8"];
   networking.search = ["tail93136.ts.net"];
 
+  # Use systemd-resolved to fix DNS issues
+  services.resolved = {
+    enable = true;
+  };
+
   # Enable persistence of tailscale keys/auth creds
   environment.persistence."/persist/config/tailscale" = {
     hideMounts = true;
