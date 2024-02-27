@@ -7,4 +7,7 @@
 
   # Automatic timezone sync
   services.automatic-timezoned.enable = true;
+
+  # Give Geoclue access to NetworkManager (if installed) for more accurate geo-location
+  users.users.geoclue.extraGroups = [ "networkmanager" ];
 }
