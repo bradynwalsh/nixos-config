@@ -9,5 +9,6 @@
     ./corePackages.nix
     ./fwupd.nix
     ./impermanence.nix
+    ./ssh.nix
   ];
 }
