@@ -5,9 +5,10 @@
   services.openssh = {
     enable = true;
 
+    allowSFTP = false;
+
     settings = {
       PasswordAuthentication = false;
-      AllowSFTP = false;
       KbdInteractiveAuthentication = false;
       PermitRootLogin = "no";
       X11Forwarding = false;
