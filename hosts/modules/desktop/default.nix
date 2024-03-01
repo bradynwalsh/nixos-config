@@ -8,5 +8,6 @@
     ./lock.nix
     ./bluetooth.nix
     ./virtualization.nix
+    ./usb.nix
   ];
 }
