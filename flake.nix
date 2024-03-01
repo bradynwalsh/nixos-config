@@ -39,9 +39,14 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboote, impermanence, ... }@inputs: {
+  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, lanzaboote, impermanence, sops-nix, ... }@inputs: {
     nixosConfigurations.artemis = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
@@ -49,6 +54,7 @@
         disko.nixosModules.disko
         lanzaboote.nixosModules.lanzaboote
         impermanence.nixosModules.impermanence
+        sops-nix.nixosModules.sops
 
         ./hosts/artemis
         nixos-hardware.nixosModules.framework-12th-gen-intel
