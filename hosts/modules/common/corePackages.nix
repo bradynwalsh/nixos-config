@@ -8,6 +8,7 @@
   environment.systemPackages = [
     pkgs.ripgrep
     pkgs.unzip
+    pkgs.sops
   ];
 
   users.defaultUserShell = pkgs.fish;
