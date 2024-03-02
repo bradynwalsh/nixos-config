@@ -9,3 +9,4 @@ Features of my setup include:
 - TPM LUKS Full-disk encryption
 - Imperamence
 - [Home Manager](https://github.com/nix-community/home-manager) configuration
+- Secrets Management with [sops-nix](https://github.com/Mic92/sops-nix) and [age](https://github.com/FiloSottile/age)
