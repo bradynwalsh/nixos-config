@@ -1,0 +1,9 @@
+keys:
+  - &bradyn age189j3umhs9t85l4f7wjszwruzdse59vn2qky702aepnc38g04a9usnccd3c
+  - &artemis age1qkav694ny4y75j2973vt4vjga4y8r2acdh5aulpeldu3qw9wl38qv86804
+creation_rules:
+  - path_regex: users/bradyn/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+        - *bradyn
+        - *artemis

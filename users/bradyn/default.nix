@@ -2,8 +2,12 @@
 
 {
   users.users.bradyn = {
-    initialPassword = "correcthorsebatterystaple";
     isNormalUser = true;
     extraGroups = ["wheel" "vboxusers" "qemu-libvirtd" "libvirtd"];
+    hashedPasswordFile = config.sops.secrets.bradyn_hashed_password.path;
+  };
+
+  sops.secrets.bradyn_hashed_password = {
+    sopsFile = ./secrets.yaml;
   };
 }

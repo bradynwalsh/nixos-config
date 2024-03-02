@@ -10,5 +10,6 @@
     ./fwupd.nix
     ./impermanence.nix
     ./ssh.nix
+    ./secrets.nix
   ];
 }
