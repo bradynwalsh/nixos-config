@@ -13,6 +13,7 @@
     # Needed for secrets management
     pkgs.sops
     pkgs.age
+    pkgs.ssh-to-age
   ];
 
   users.defaultUserShell = pkgs.fish;
