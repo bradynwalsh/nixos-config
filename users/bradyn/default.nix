@@ -9,5 +9,6 @@
 
   sops.secrets.bradyn_hashed_password = {
     sopsFile = ./secrets.yaml;
+    neededForUsers = true;
   };
 }
