@@ -10,6 +10,14 @@
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
+
+      # Add Cachix Cache
+      substituters = [
+        "https://bradynwalsh.cachix.org"
+      ];
+      trusted-public-keys = [
+        "bradynwalsh.cachix.org-1:PpxfULL8qxYZFPSfnm4eN1X+aLpfAh8IZYtNhU51GC8="
+      ];
     };
   };
 
