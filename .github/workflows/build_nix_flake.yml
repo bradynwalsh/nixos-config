@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         machine:
-          - host: atremis
+          - host: artemis
             platform: x84-64-linux
 
     # Steps represent a sequence of tasks that will be executed as part of the job
