@@ -1,0 +1,50 @@
+name: Build Nix Flake
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        machine:
+          - host: atremis
+            platform: x84-64-linux
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+        with:
+          extra_conf: |
+            fallback = true
+            http-connections = 128
+            max-substitution-jobs = 128
+            extra-platforms = aarch64-linux
+            substituters = https://bradynwalsh.cachix.org/ https://cache.nixos.org/
+            trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= bradynwalsh.cachix.org-1:PpxfULL8qxYZFPSfnm4eN1X+aLpfAh8IZYtNhU51GC8=
+
+      - name: Add Cachix
+        uses: cachix/cachix-action@v14
+        with:
+          name: bradynwalsh
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+
+      - name: Build and push system
+        run: |
+          nix build .#nixosConfigurations.${{ matrix.machine.host }}.config.system.build.toplevel
+          
