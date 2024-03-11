@@ -2,6 +2,7 @@
 
 {
   config.wayland.windowManager.hyprland.enable = true;
+  config.wayland.windowManager.hyprland.package = inputs.hyprland.packages.${pkgs.system}.hyprland;
 
   config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
