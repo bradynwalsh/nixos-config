@@ -7,6 +7,7 @@
     ../applications/helix.nix
     ../applications/git.nix
     ../applications/bat.nix
+    ../applications/eza.nix
     ../applications/lsp.nix
     ../applications/vscode.nix
     ../applications/boxes.nix
@@ -22,7 +23,6 @@
   home.packages = [
     pkgs.htop
     pkgs.glances
-    pkgs.eza
     pkgs.fd
     pkgs.fzf
   ];
