@@ -12,8 +12,8 @@
     env = "XCURSOR_SIZE,24";
 
     exec-once = [
-      "mako"
       "hyprpaper"
+      "mako"
     ];
 
     "$mod" = "SUPER";
