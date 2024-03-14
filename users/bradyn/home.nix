@@ -21,6 +21,7 @@
   home.stateVersion = "23.11";
 
   home.packages = [
+    pkgs.btop
     pkgs.htop
     pkgs.glances
     pkgs.fd
