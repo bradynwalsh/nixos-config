@@ -29,13 +29,13 @@
             criteria = "LG Electronics W2353 0x01010101";
             status = "enable";
             position = "0,0";
-            mode = "1920x1080@60Hz";
+            mode = "1920x1080@59.94Hz";
           }
           {
             criteria = "Samsung Electric Company C27F591 HTHH801227";
             status = "enable";
             position = "1920,0";
-            mode = "1920x1080@60Hz";
+            mode = "1920x1080@59.94Hz";
           }
         ];
       };
