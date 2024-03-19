@@ -56,7 +56,7 @@
         clock = {
           timezones = ["Australia/Adelaide" "UTC"];
           interval = 1;
-          format = "<b>{:  %I:%M %p    %a, %b %e}</b>";
+          format = "{:  %I:%M %p    %a, %b %e}";
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
 
