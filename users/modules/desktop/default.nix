@@ -12,5 +12,6 @@
     ./bar.nix
     ./thunar.nix
     ./bluetooth.nix
+    ./kanshi.nix
   ];
 }
