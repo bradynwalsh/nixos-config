@@ -23,6 +23,7 @@
           "battery"
           "wireplumber"
           "tray"
+          "idle_inhibitor"
         ];
 
         "hyprland/window" = {
@@ -103,6 +104,14 @@
           critical-threshold = 80;
           format-critical = "{temperatureC}°C ";
         };
+
+        idle_inhibitor = {
+          format = "{icon}";
+          format-icons = {
+            "activated" = "";
+            "deactivated" = "";
+          };
+        };
       };
     };
 
@@ -146,7 +155,8 @@
       #workspaces,
       #tray,
       #backlight,
-      #custom-powermenu  
+      #custom-powermenu,
+      #idle_inhibitor
       {
         background: #1e1e2e;
         opacity: 0.85;
@@ -176,7 +186,7 @@
         border-radius: 10px;
       }
 
-      #tray {
+      #tray, #idle_inhibitor {
         border-radius: 10px;
         margin-right: 10px;
         border: 1px solid #B086E3;
