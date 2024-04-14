@@ -6,7 +6,7 @@
     kubectl
     kubernetes-helm
     helm-dashboard
-    fluxctl
+    fluxcd
     argocd
   ];
 }
