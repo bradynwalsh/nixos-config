@@ -14,6 +14,7 @@
     ../applications/discord.nix
     ../modules/terminal
     ../modules/desktop
+    ../modules/kubedev
   ];
 
   home.username = "bradyn";
