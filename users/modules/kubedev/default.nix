@@ -8,5 +8,6 @@
     helm-dashboard
     fluxcd
     argocd
+    kubeseal
   ];
 }
