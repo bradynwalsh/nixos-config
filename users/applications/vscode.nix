@@ -12,6 +12,7 @@
       pkgs.vscode-extensions.bbenoist.nix
       pkgs.vscode-extensions.tomoki1207.pdf
       pkgs.vscode-extensions.redhat.vscode-yaml
+      pkgs.vscode-extensions.ms-kubernetes-tools.vscode-kubernetes-tools
     ];
   };
 }
