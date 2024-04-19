@@ -9,5 +9,6 @@
     fluxcd
     argocd
     kubeseal
+    kustomize
   ];
 }
