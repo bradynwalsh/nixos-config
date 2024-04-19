@@ -11,6 +11,7 @@
     extensions = [
       pkgs.vscode-extensions.bbenoist.nix
       pkgs.vscode-extensions.tomoki1207.pdf
+      pkgs.vscode-extensions.redhat.vscode-yaml
     ];
   };
 }
