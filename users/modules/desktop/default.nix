@@ -13,5 +13,6 @@
     ./thunar.nix
     ./bluetooth.nix
     ./kanshi.nix
+    ./yubikey.nix
   ];
 }
