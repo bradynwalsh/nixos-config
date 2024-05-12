@@ -8,25 +8,24 @@
     systemdTarget = "hyprland-session.target";
 
     # Set status of monitors for each configuration
-    profiles = {
-      undocked = {
-        outputs = [
-          {
-            criteria = "eDP-1";
-            scale = 1.0;
-            status = "enable";
-          }
-        ];
-      };
-
-      home_office_docked = {
-        outputs = [
+    settings = [
+      {
+        profile.name = "undocked";
+        profile.outputs = [{
+          criteria = "eDP-1";
+          scale = 1.0;
+          status = "enable";
+        }];
+      }
+      {
+        profile.name = "home_office_docked";
+        profile.outputs = [
           {
             criteria = "eDP-1";
             status = "disable";
           }
           {
-            criteria = "LG Electronics W2353 0x01010101";
+            criteria =  "LG Electronics W2353 0x01010101";
             status = "enable";
             position = "0,0";
             mode = "1920x1080@59.94Hz";
@@ -38,7 +37,7 @@
             mode = "1920x1080@59.94Hz";
           }
         ];
-      };
-    };
+      }
+    ];
   };
 }
