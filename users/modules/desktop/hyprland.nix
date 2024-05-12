@@ -85,17 +85,41 @@
     };
   };
 
-  config.services.swayidle = {
+  config.services.hypridle = {
     enable = true;
 
-    timeouts = [
-      { timeout = 60; command = "${pkgs.swaylock}/bin/swaylock -fF -i ${./lockscreen.png}"; }
-      { timeout = 120; command = "${pkgs.systemd}/bin/systemctl suspend"; }
-    ];
+    settings = {
+      general = {
+        lock_cmd = "pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock";
+        before_sleep_cmd = "${pkgs.systemd}/bin/loginctl lock-session";
+      };
 
-    events = [
-      { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF -i ${./lockscreen.png}"; }
-    ];
+      listener = [
+        {
+          timeout = 60;
+          on-timeout = "${pkgs.systemd}/bin/loginctl lock-session";
+        }
+        {
+          timeout = 120;
+          on-timeout = "${pkgs.systemd}/bin/systemctl suspend";
+        }
+      ];
+    };
+  };
+
+  config.programs.hyprlock = {
+    enable = true;
+
+    settings = {
+      general = {
+        disable_loading_bar = true;
+        hide_cursor = true;
+      };
+
+      background = {
+        path = "${./lockscreen.png}";
+      };
+    };
   };
 
   config.home.packages = [
