@@ -7,7 +7,7 @@
   config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
     "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
-    "$lock" = "swaylock -f -i ${./lockscreen.png}";
+    "$lock" = "${pkgs.systemd}/bin/loginctl lock-session";
 
     env = "XCURSOR_SIZE,24";
 
