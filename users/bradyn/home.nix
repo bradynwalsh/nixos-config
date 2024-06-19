@@ -27,6 +27,7 @@
     pkgs.glances
     pkgs.fd
     pkgs.fzf
+    pkgs.yt-dlp
   ];
 
   programs.home-manager.enable = true;
