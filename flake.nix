@@ -11,6 +11,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hypridle = {
+      url = "github:hyprwm/hypridle";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprlang.follows = "hyprlang";
+    };
+
     hyprland = {
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
