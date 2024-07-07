@@ -24,6 +24,13 @@
       inputs.hyprutils.follows = "hyprutils";
     };
 
+    hyprlock = {
+      url = "github:hyprwm/hyprlock";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprlang.follows = "hyprlang";
+    };
+
     hyprpaper = {
       url = "github:hyprwm/hyprpaper";
       inputs.nixpkgs.follows = "nixpkgs";
