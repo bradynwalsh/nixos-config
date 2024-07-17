@@ -15,6 +15,7 @@
       url = "github:hyprwm/hypridle";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprlang";
+      inputs.hyprutils.follows = "hyprutils";
     };
 
     hyprland = {

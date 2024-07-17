@@ -210,7 +210,9 @@
         "hyprlang": [
           "hyprlang"
         ],
-        "hyprutils": "hyprutils",
+        "hyprutils": [
+          "hyprutils"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -365,31 +367,6 @@
       }
     },
     "hyprutils": {
-      "inputs": {
-        "nixpkgs": [
-          "hypridle",
-          "nixpkgs"
-        ],
-        "systems": [
-          "hypridle",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1721071737,
-        "narHash": "sha256-qmC9jGfbE4+EIBbbSAkrfR/p49wShjpv4/KztgE/P54=",
-        "owner": "hyprwm",
-        "repo": "hyprutils",
-        "rev": "eb1ceff2b87f6820789249f63faa8e9dcb54d05f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hyprwm",
-        "repo": "hyprutils",
-        "type": "github"
-      }
-    },
-    "hyprutils_2": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -577,7 +554,7 @@
         "hyprlang": "hyprlang",
         "hyprlock": "hyprlock",
         "hyprpaper": "hyprpaper",
-        "hyprutils": "hyprutils_2",
+        "hyprutils": "hyprutils",
         "impermanence": "impermanence",
         "lanzaboote": "lanzaboote",
         "nixos-hardware": "nixos-hardware",
