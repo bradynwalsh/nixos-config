@@ -10,7 +10,6 @@
     ../applications/eza.nix
     ../applications/lsp.nix
     ../applications/vscode.nix
-    ../applications/boxes.nix
     ../applications/discord.nix
     ../applications/beekeeper.nix
     ../modules/terminal
