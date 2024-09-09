@@ -83,11 +83,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1725783932,
-        "narHash": "sha256-ZrDE5yqkgiv0F34w1QFz1oZnNnReW0PEA6vjO6gx4Uc=",
+        "lastModified": 1725864240,
+        "narHash": "sha256-sLu59kSOYiSlC65kL9MtP6x23bHgzPsq6jcCtXgdc58=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "58ac93a2ade218ea5e4dae38246030c7342b1eb4",
+        "rev": "bdf10a43442e1786346685890ec9329e682fba08",
         "type": "gitlab"
       },
       "original": {
@@ -178,11 +178,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1725781935,
-        "narHash": "sha256-o6LRtdpgBTzev9n243Ktu3rn0/qsv0frFyJwU6vJsdE=",
+        "lastModified": 1725863684,
+        "narHash": "sha256-HmdTBpuCsw35Ii35JUKO6AE6nae+kJliQb0XGd4hoLE=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "ec4c6928bbacc89cf10e9c959a7a47cbaad95344",
+        "rev": "be47a2bdf278c57c2d05e747a13ed31cef54a037",
         "type": "github"
       },
       "original": {
@@ -265,11 +265,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1725752806,
-        "narHash": "sha256-UwmsA7O9Wofu6YWldyR8NDv1bzxNICIg85/uOrVq69Y=",
+        "lastModified": 1725873008,
+        "narHash": "sha256-hVPjlB0EPbf98tm4LcwOmS80tO/qfAoXqXKWZjDUG50=",
         "ref": "refs/heads/main",
-        "rev": "312411fc7073143a8bf1fc3ba23ef403b7d15eee",
-        "revCount": 5195,
+        "rev": "04421063af2941c6e27e6dca2bdc2c387778a3a5",
+        "revCount": 5203,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -499,11 +499,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1725716377,
-        "narHash": "sha256-7NzW9O/cAw7iWzRfh7Oo/SuSudL4a1YTKS6yoh3tMck=",
+        "lastModified": 1725876232,
+        "narHash": "sha256-wAtiyksylNzQONG47ZD0KuxPPm0kyuoR0ssns6ME4M4=",
         "owner": "nixos",
         "repo": "nixos-hardware",
-        "rev": "04a1cda0c1725094a4db703cccbb956b7558f5a6",
+        "rev": "755813cba87f62a9da1492d9473efea2b17b9386",
         "type": "github"
       },
       "original": {
