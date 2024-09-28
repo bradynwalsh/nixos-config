@@ -4,7 +4,7 @@
   programs.kitty = {
     enable = true;
 
-    theme = "Nord";
+    themeFile = "Nord";
     font = {
       name = "FiraCode Nerd Font";
       size = 12;
