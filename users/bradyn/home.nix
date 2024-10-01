@@ -15,6 +15,7 @@
     ../modules/terminal
     ../modules/desktop
     ../modules/kubedev
+    ../modules/python
   ];
 
   home.username = "bradyn";
