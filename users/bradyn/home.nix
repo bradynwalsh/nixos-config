@@ -17,6 +17,7 @@
     ../modules/kubedev
     ../modules/python
     ../modules/rust
+    ../modules/julia
   ];
 
   home.username = "bradyn";
