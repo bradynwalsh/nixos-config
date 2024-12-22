@@ -25,7 +25,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: jlumbroso/free-disk-space@main
 
       - name: Install Nix
@@ -40,7 +40,7 @@ jobs:
             trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= bradynwalsh.cachix.org-1:PpxfULL8qxYZFPSfnm4eN1X+aLpfAh8IZYtNhU51GC8=
 
       - name: Add Cachix
-        uses: cachix/cachix-action@v14
+        uses: cachix/cachix-action@v15
         with:
           name: bradynwalsh
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
