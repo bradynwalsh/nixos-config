@@ -40,6 +40,9 @@
       "Documents"
       ".ssh"
       ".config/discord"
+      ".cache/flatpak"
+      ".local/share/flatpak"
+      ".var/app/com.valvesoftware.Steam"
     ];
     allowOther = true;
   };

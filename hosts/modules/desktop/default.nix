@@ -9,5 +9,6 @@
     ./bluetooth.nix
     ./virtualization.nix
     ./usb.nix
+    ./flatpak.nix
   ];
 }
