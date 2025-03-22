@@ -12,6 +12,7 @@
     ../applications/vscode.nix
     ../applications/discord.nix
     ../applications/beekeeper.nix
+    ../applications/openconnect.nix
     ../modules/terminal
     ../modules/desktop
     ../modules/kubedev
