@@ -17,6 +17,7 @@
     ];
 
     "$mod" = "SUPER";
+    "$shiftMod" = "SUPER_SHIFT";
 
     bind = [
       "$mod, Q, exec, $terminal"
@@ -27,6 +28,7 @@
       "$mod, R, exec, $menu"
       "$mod, P, pseudo"
       "$mod, J, togglesplit"
+      "$shiftMod, PRINT, exec, hyprshot -m region"
     ] ++ (
         # workspaces
         # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
@@ -129,6 +131,7 @@
   config.home.packages = [
     inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
     pkgs.networkmanagerapplet
+    pkgs.hyprshot
   ];
 
   config.xdg.configFile."hypr/hyprpaper.conf".text = ''
