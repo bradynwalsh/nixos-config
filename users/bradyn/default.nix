@@ -3,7 +3,7 @@
 {
   users.users.bradyn = {
     isNormalUser = true;
-    extraGroups = ["wheel" "vboxusers" "qemu-libvirtd" "libvirtd"];
+    extraGroups = ["wheel" "vboxusers" "qemu-libvirtd" "libvirtd" "networkmanager"];
     hashedPasswordFile = config.sops.secrets.bradyn_hashed_password.path;
   };
 
