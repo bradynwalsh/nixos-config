@@ -11,5 +11,6 @@
     ./impermanence.nix
     ./ssh.nix
     ./secrets.nix
+    ./podman.nix
   ];
 }
