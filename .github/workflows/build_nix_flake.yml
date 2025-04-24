@@ -31,7 +31,7 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
         with:
-          extra_conf: |
+          extra-conf: |
             fallback = true
             http-connections = 128
             max-substitution-jobs = 128
