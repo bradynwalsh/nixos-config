@@ -35,4 +35,12 @@
       fi
     '';
   };
+
+  environment.persistence."/persist/config/nixos" = {
+    hideMounts = true;
+
+    directories = [
+      "/var/lib/nixos"
+    ];
+  };
 }
