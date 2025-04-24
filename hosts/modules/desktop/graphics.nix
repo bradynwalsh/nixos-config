@@ -36,7 +36,7 @@
     ];
   };
 
-  # Persist fingerprints for tuigreet
+  # Persist fingerprints for fprintd
   environment.persistence."/persist/config/fprintd" = {
     hideMounts = true;
     directories = [
