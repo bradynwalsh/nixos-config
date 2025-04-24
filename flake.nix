@@ -23,6 +23,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprgraphics.follows = "hyprgraphics";
+      inputs.hyprland-qtutils.follows = "hyprland-qtutils";
     };
 
     hyprlang = {
@@ -36,6 +38,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprlang.follows = "hyprlang";
+      inputs.hyprgraphics.follows = "hyprgraphics";
     };
 
     hyprpaper = {
@@ -43,11 +46,32 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprgraphics.follows = "hyprgraphics";
     };
 
     hyprutils = {
       url = "github:hyprwm/hyprutils";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprgraphics = {
+      url = "github:hyprwm/hyprgraphics";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprutils.follows = "hyprutils";
+    };
+
+    hyprland-qt-support = {
+      url = "github:hyprwm/hyprland-qt-support";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprlang.follows = "hyprlang";
+    };
+
+    hyprland-qtutils = {
+      url = "github:hyprwm/hyprland-qtutils";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprlang.follows = "hyprlang";
+      inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprland-qt-support.follows = "hyprland-qt-support";
     };
 
     home-manager = {
