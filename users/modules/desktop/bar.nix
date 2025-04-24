@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   config.programs.waybar = {
     enable = true;
+
+    package = pkgs.waybar.override {hyprland = inputs.hyprland.packages.${pkgs.system}.hyprland ; } ;
 
     settings = {
       mainBar = {

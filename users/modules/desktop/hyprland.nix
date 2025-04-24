@@ -131,7 +131,7 @@
   config.home.packages = [
     inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
     pkgs.networkmanagerapplet
-    pkgs.hyprshot
+    (pkgs.hyprshot.override { hyprland = inputs.hyprland.packages.${pkgs.system}.hyprland ; })
   ];
 
   config.xdg.configFile."hypr/hyprpaper.conf".text = ''
