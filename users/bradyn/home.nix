@@ -13,6 +13,10 @@
     ../applications/discord.nix
     ../applications/beekeeper.nix
     ../applications/openconnect.nix
+    ../applications/duckdb.nix
+    ../applications/wireshark.nix
+    ../applications/7zip.nix
+    ../applications/awscli.nix
     ../modules/terminal
     ../modules/desktop
     ../modules/kubedev
