@@ -87,6 +87,10 @@
         color = "rgba(1a1a1aee)";
       };
     };
+
+    ecosystem = {
+      no_update_news = true;
+    };
   };
 
   config.services.hypridle = {
