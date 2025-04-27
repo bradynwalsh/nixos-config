@@ -129,6 +129,12 @@
       background = {
         path = "${./lockscreen.png}";
       };
+
+      auth = {
+        fingerprint = {
+          enabled = true;
+        };
+      };
     };
   };
 
