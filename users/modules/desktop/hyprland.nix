@@ -91,6 +91,11 @@
     ecosystem = {
       no_update_news = true;
     };
+
+    misc = {
+      disable_hyprland_logo = true;
+      force_default_wallpaper = 0;
+    };
   };
 
   config.services.hypridle = {
