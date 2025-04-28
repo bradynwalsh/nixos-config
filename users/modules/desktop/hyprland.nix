@@ -161,7 +161,7 @@
           font_size = 120;
           font_family = "JetBrains Mono Nerd Font Mono ExtraBold";
           halign = "center";
-          valign = "top";  
+          valign = "top";
           position = "0,-300";
         }
         {
