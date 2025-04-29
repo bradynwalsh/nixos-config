@@ -17,6 +17,7 @@
     ../applications/wireshark.nix
     ../applications/7zip.nix
     ../applications/awscli.nix
+    ../applications/zed.nix
     ../modules/terminal
     ../modules/desktop
     ../modules/kubedev
