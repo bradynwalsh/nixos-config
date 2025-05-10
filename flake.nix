@@ -16,6 +16,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+      inputs.hyprland-protocols.follows = "hyprland-protocols";
     };
 
     hyprland = {
@@ -25,6 +27,9 @@
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprgraphics.follows = "hyprgraphics";
       inputs.hyprland-qtutils.follows = "hyprland-qtutils";
+      inputs.xdph.follows = "xdph";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+      inputs.hyprland-protocols.follows = "hyprland-protocols";
     };
 
     hyprlang = {
@@ -39,6 +44,7 @@
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprgraphics.follows = "hyprgraphics";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
     };
 
     hyprpaper = {
@@ -47,6 +53,33 @@
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprgraphics.follows = "hyprgraphics";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+    };
+
+    hyprpicker = {
+      url = "github:hyprwm/hyprpicker";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+    };
+
+    xdph = {
+      url = "github:hyprwm/xdg-desktop-portal-hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprland-protocols.follows = "hyprland-protocols";
+      inputs.hyprlang.follows = "hyprlang";
+      inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+    };
+
+    hyprland-protocols = {
+      url = "github:hyprwm/hyprland-protocols";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprwayland-scanner = {
+      url = "github:hyprwm/hyprwayland-scanner";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprutils = {

@@ -3,6 +3,7 @@
 {
   config.wayland.windowManager.hyprland.enable = true;
   config.wayland.windowManager.hyprland.package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  config.wayland.windowManager.hyprland.portalPackage = inputs.xdph.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
 
   config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
@@ -189,7 +190,7 @@
   config.home.packages = [
     inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
     pkgs.networkmanagerapplet
-    (pkgs.hyprshot.override { hyprland = inputs.hyprland.packages.${pkgs.system}.hyprland ; })
+    (pkgs.hyprshot.override { hyprland = inputs.hyprland.packages.${pkgs.system}.hyprland ; hyprpicker = inputs.hyprpicker.packages.${pkgs.system}.hyprpicker ; })
   ];
 
   config.xdg.configFile."hypr/hyprpaper.conf".text = ''
