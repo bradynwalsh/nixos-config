@@ -6,16 +6,16 @@
 
     settings = {
       font = "JetBrains Mono 12";
-      backgroundColor = "#2B3339CC";
+      background-color = "#2B3339CC";
 
       width = "300";
       height = "110";
 
-      borderSize = "2";
-      borderColor = "#4C566A";
-      borderRadius = "18";
+      border-size = "2";
+      border-color = "#4C566A";
+      border-radius = "18";
 
-      defaultTimeout = "60000";
+      default-timeout = "60000";
     };
 
     criteria = {
