@@ -1,8 +1,11 @@
 {pkgs, ... }: {
 
   home.packages = [
-    pkgs.gcc
     pkgs.cmake
-    pkgs.gnumake    
+    pkgs.gnumake
+    pkgs.lldb
+    pkgs.clang
+    pkgs.clang-tools
+    pkgs.cmake-format
   ];
 }
