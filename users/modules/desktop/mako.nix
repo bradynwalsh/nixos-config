@@ -16,9 +16,7 @@
       border-radius = "18";
 
       default-timeout = "60000";
-    };
 
-    criteria = {
       "urgency=low" = {
         border-color = "#cccccc";
       };
