@@ -24,6 +24,7 @@
     ../modules/python
     ../modules/rust
     ../modules/julia
+    ../modules/cdev
   ];
 
   home.username = "bradyn";
