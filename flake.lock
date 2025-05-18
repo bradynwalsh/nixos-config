@@ -76,11 +76,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1747454607,
-        "narHash": "sha256-E6Z01BGqHtjIKktUtkX7SDET8KRkzM57smUuHnmulYY=",
+        "lastModified": 1747541019,
+        "narHash": "sha256-j3GieFJQqdtDLQmGMVhtiPy/3gP3PjlPybKywN4hOOQ=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "b4e226b3485a9c3c6f224393975400b38d1e7b67",
+        "rev": "830ffcdb44051917600abb79007e8593e9effc53",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747439237,
-        "narHash": "sha256-5rCGrnkglKKj4cav1U3HC+SIUNJh08pqOK4spQv9RjA=",
+        "lastModified": 1747565775,
+        "narHash": "sha256-B6jmKHUEX1jxxcdoYHl7RVaeohtAVup8o3nuVkzkloA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "ae755329092c87369b9e9a1510a8cf1ce2b1c708",
+        "rev": "97118a310eb8e13bc1b9b12d67267e55b7bee6c8",
         "type": "github"
       },
       "original": {
@@ -325,11 +325,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747480093,
-        "narHash": "sha256-3Qr9EIHkkYB58qOIjiKYJFEwkOmBgPRw2C3/2LfJod4=",
+        "lastModified": 1747503792,
+        "narHash": "sha256-Ew6QM6iLk5AlSHlCP+EyexLhouDks2CgEUoTz6HJBLI=",
         "ref": "refs/heads/main",
-        "rev": "18377d221d8c440c6ec3a1d2313947d81c4741e1",
-        "revCount": 6118,
+        "rev": "705b97c4ac93148820012c701fe39445cf76a590",
+        "revCount": 6123,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -426,11 +426,11 @@
         "systems": "systems_7"
       },
       "locked": {
-        "lastModified": 1746655412,
-        "narHash": "sha256-kVQ0bHVtX6baYxRWWIh4u3LNJZb9Zcm2xBeDPOGz5BY=",
+        "lastModified": 1747484975,
+        "narHash": "sha256-+LAQ81HBwG0lwshHlWe0kfWg4KcChIPpnwtnwqmnoEU=",
         "owner": "hyprwm",
         "repo": "hyprlang",
-        "rev": "557241780c179cf7ef224df392f8e67dab6cef83",
+        "rev": "163c83b3db48a17c113729c220a60b94596c9291",
         "type": "github"
       },
       "original": {
@@ -519,11 +519,11 @@
         "systems": "systems_10"
       },
       "locked": {
-        "lastModified": 1747176605,
-        "narHash": "sha256-oJZgwU762Ofd5//MBMXsHAsGqzKpFBqucNNdHSsNPgE=",
+        "lastModified": 1747485002,
+        "narHash": "sha256-B58kt7zCstylAXBhdiWLgB6+ZbZXG/ecyhXL1HsoCqk=",
         "owner": "hyprwm",
         "repo": "hyprpicker",
-        "rev": "b0c0db66fa3295828512609215b81df10acf1ca2",
+        "rev": "8f886f9e9b2eeba8bea89bcb2e762ff96251b821",
         "type": "github"
       },
       "original": {
