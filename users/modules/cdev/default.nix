@@ -7,5 +7,6 @@
     pkgs.clang
     pkgs.clang-tools
     pkgs.cmake-format
+    pkgs.ninja
   ];
 }
