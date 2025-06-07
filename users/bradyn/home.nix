@@ -6,6 +6,7 @@
 
     ../applications/helix.nix
     ../applications/git.nix
+    ../applications/jj.nix
     ../applications/bat.nix
     ../applications/eza.nix
     ../applications/lsp.nix
@@ -25,6 +26,7 @@
     ../modules/rust
     ../modules/julia
     ../modules/cdev
+    ../modules/lean
   ];
 
   home.username = "bradyn";
