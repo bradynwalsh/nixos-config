@@ -19,6 +19,12 @@
     pkgs.xdg-utils
   ];
 
+  xdg.portal = {
+    enable = true;
+
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  };
+
   # Use tuigreet
   services.greetd = {
     enable = true;

@@ -202,4 +202,9 @@
     package = pkgs.gnome.adwaita-icon-theme;
     name = "adwaita-icon-theme";
   };
+
+  config.xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  };
 }
