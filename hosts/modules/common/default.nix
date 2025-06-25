@@ -12,5 +12,8 @@
     ./ssh.nix
     ./secrets.nix
     ./podman.nix
+    ./pam.nix
   ];
+
+  programs.nix-ld.enable = true;
 }
