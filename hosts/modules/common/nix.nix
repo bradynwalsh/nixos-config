@@ -4,9 +4,7 @@
     config = {
       allowUnfree = true;
 
-      permittedInsecurePackages = [
-        "beekeeper-studio-5.2.12"
-      ];
+      permittedInsecurePackages = [ ];
     };
   };
 

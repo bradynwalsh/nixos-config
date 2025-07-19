@@ -12,7 +12,6 @@
     ../applications/lsp.nix
     ../applications/vscode.nix
     ../applications/discord.nix
-    ../applications/beekeeper.nix
     ../applications/openconnect.nix
     ../applications/duckdb.nix
     ../applications/wireshark.nix
