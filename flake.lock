@@ -194,11 +194,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1755313937,
-        "narHash": "sha256-pQb7bNcolxYGRiylUCrTddiF+qW2wsUiM9+eRIDUrVU=",
+        "lastModified": 1755397986,
+        "narHash": "sha256-qwrF5laj6eE3Zht0wKYTmH6QzL7bdOyE2f6jd3WCO8g=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "2a749f4790a14f7168be67cdf6e548ef1c944e10",
+        "rev": "8b4ac149687e8520187a66f05e9d4eafebf96522",
         "type": "github"
       },
       "original": {
@@ -325,11 +325,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1755277479,
-        "narHash": "sha256-YrmtKABsX8Jdy/+Lyebzr5XUJbd1bHlwPZ51SI0RBJ8=",
+        "lastModified": 1755416233,
+        "narHash": "sha256-tydnBQmV8pPHPlvq7sTEOEhkjXnYaeJtMN+77Rf/1NU=",
         "ref": "refs/heads/main",
-        "rev": "edc473e8b0c14e768445422080af9978d132bff6",
-        "revCount": 6365,
+        "rev": "251288ec5942b3544ad31de1299569284d80f0d7",
+        "revCount": 6370,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -540,11 +540,11 @@
         "systems": "systems_11"
       },
       "locked": {
-        "lastModified": 1755184588,
-        "narHash": "sha256-aWnI+0+qdCgwbbB/TH5RUW+PgC4u+z+xXnIceCxYUO4=",
+        "lastModified": 1755416120,
+        "narHash": "sha256-PosTxeL39YrLvCX5MqqPA6NNWQ4T5ea5K55nmN7ju9Q=",
         "owner": "hyprwm",
         "repo": "hyprutils",
-        "rev": "69efb6291c7343e936f2ddce622990ed018b7fdb",
+        "rev": "e631ea36ddba721eceda69bfee6dd01068416489",
         "type": "github"
       },
       "original": {
@@ -976,11 +976,11 @@
         "systems": "systems_13"
       },
       "locked": {
-        "lastModified": 1755184573,
-        "narHash": "sha256-39UEmForEvukv1HnRVAEAqnfq6TddupVvLbC+IcKL+I=",
+        "lastModified": 1755354946,
+        "narHash": "sha256-zdov5f/GcoLQc9qYIS1dUTqtJMeDqmBmo59PAxze6e4=",
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
-        "rev": "add72858d1eecba7c412f99c2ac11c1597493a59",
+        "rev": "a10726d6a8d0ef1a0c645378f983b6278c42eaa0",
         "type": "github"
       },
       "original": {
