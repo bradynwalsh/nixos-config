@@ -38,6 +38,8 @@
     pkgs.glances
     pkgs.fd
     pkgs.fzf
+    pkgs.wget
+    pkgs.jq
     pkgs.yt-dlp
   ];
 
