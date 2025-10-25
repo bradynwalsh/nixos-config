@@ -3,7 +3,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "Bradyn Walsh";
-    userEmail = "bradyn.walsh@gmail.com";
+    settings = {
+      user = {
+        name = "Bradyn Walsh";
+        email = "bradyn.walsh@gmail.com";
+      };
+     };
   };
 }
