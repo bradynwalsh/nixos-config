@@ -2,8 +2,8 @@
 
 {
   config.wayland.windowManager.hyprland.enable = true;
-  config.wayland.windowManager.hyprland.package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  config.wayland.windowManager.hyprland.portalPackage = inputs.xdph.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+  config.wayland.windowManager.hyprland.package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  config.wayland.windowManager.hyprland.portalPackage = inputs.xdph.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
   config.wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
@@ -101,11 +101,11 @@
 
   config.services.hypridle = {
     enable = true;
-    package = inputs.hypridle.packages.${pkgs.system}.hypridle;
+    package = inputs.hypridle.packages.${pkgs.stdenv.hostPlatform.system}.hypridle;
 
     settings = {
       general = {
-        lock_cmd = "pidof hyprlock || ${inputs.hyprlock.packages.${pkgs.system}.hyprlock}/bin/hyprlock";
+        lock_cmd = "pidof hyprlock || ${inputs.hyprlock.packages.${pkgs.stdenv.hostPlatform.system}.hyprlock}/bin/hyprlock";
         before_sleep_cmd = "${pkgs.systemd}/bin/loginctl lock-session";
       };
 
@@ -124,7 +124,7 @@
 
   config.programs.hyprlock = {
     enable = true;
-    package = inputs.hyprlock.packages.${pkgs.system}.hyprlock;
+    package = inputs.hyprlock.packages.${pkgs.stdenv.hostPlatform.system}.hyprlock;
 
     settings = {
       general = {
@@ -188,9 +188,9 @@
   };
 
   config.home.packages = [
-    inputs.hyprpaper.packages.${pkgs.system}.hyprpaper
+    inputs.hyprpaper.packages.${pkgs.stdenv.hostPlatform.system}.hyprpaper
     pkgs.networkmanagerapplet
-    (pkgs.hyprshot.override { hyprland = inputs.hyprland.packages.${pkgs.system}.hyprland ; hyprpicker = inputs.hyprpicker.packages.${pkgs.system}.hyprpicker ; })
+    (pkgs.hyprshot.override { hyprland = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland ; hyprpicker = inputs.hyprpicker.packages.${pkgs.stdenv.hostPlatform.system}.hyprpicker ; })
   ];
 
   config.xdg.configFile."hypr/hyprpaper.conf".text = ''
