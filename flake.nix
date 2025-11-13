@@ -26,7 +26,6 @@
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprgraphics.follows = "hyprgraphics";
-      inputs.hyprland-qtutils.follows = "hyprland-qtutils";
       inputs.xdph.follows = "xdph";
       inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
       inputs.hyprland-protocols.follows = "hyprland-protocols";
@@ -97,14 +96,6 @@
       url = "github:hyprwm/hyprland-qt-support";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprlang";
-    };
-
-    hyprland-qtutils = {
-      url = "github:hyprwm/hyprland-qtutils";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.hyprlang.follows = "hyprlang";
-      inputs.hyprutils.follows = "hyprutils";
-      inputs.hyprland-qt-support.follows = "hyprland-qt-support";
     };
 
     home-manager = {
