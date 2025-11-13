@@ -9,6 +9,7 @@
     # Nice to have system utilities
     pkgs.ripgrep
     pkgs.unzip
+    pkgs.p7zip
 
     # Needed for secrets management
     pkgs.sops

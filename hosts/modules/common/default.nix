@@ -13,6 +13,7 @@
     ./secrets.nix
     ./podman.nix
     ./pam.nix
+    ./clamav.nix
   ];
 
   programs.nix-ld.enable = true;
