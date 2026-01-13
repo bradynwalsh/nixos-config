@@ -2,8 +2,6 @@
 
 {
   imports = [
-    inputs.impermanence.nixosModules.home-manager.impermanence
-
     ../applications/helix.nix
     ../applications/git.nix
     ../applications/jj.nix
@@ -45,7 +43,7 @@
 
   programs.home-manager.enable = true;
 
-  home.persistence."/persist/home/bradyn" = {
+  home.persistence."/persist" = {
     directories = [
       "Documents"
       ".ssh"
@@ -54,6 +52,5 @@
       ".local/share/flatpak"
       ".var/app/com.valvesoftware.Steam"
     ];
-    allowOther = true;
   };
 }
