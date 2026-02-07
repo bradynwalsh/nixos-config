@@ -109,11 +109,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1770350627,
-        "narHash": "sha256-gaLX5akNsppWTRPw4Q+E8QxsjxMkMAU539wFdnI8i70=",
+        "lastModified": 1770437015,
+        "narHash": "sha256-+FHN9EthS+kHxnMoSDZEiGLoxwiIuij6ltK3aTmlLMA=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "27854a8a99d8ef77d0d6c70cf9c7f99f1a3e8d8f",
+        "rev": "65d59f814068d04e532cad2773d281e4951acd95",
         "type": "gitlab"
       },
       "original": {
@@ -336,11 +336,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770330959,
-        "narHash": "sha256-qRpFh1OC6wxsGfoZswH3TiVk86t8gwd2tryymtIhb/U=",
+        "lastModified": 1770462705,
+        "narHash": "sha256-8oQQBjy/G5YLUApz+gFr4t3OiJeMkrvLGJuOpcqdU5Y=",
         "ref": "refs/heads/main",
-        "rev": "562171ab668e7ee98a9d2bbb62a9477ad2b1e24e",
-        "revCount": 6865,
+        "rev": "cfbbfb591ae5c7d11bae72effe6e08ef60ce7453",
+        "revCount": 6868,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
