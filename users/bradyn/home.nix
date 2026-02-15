@@ -24,6 +24,7 @@
     ../modules/julia
     ../modules/cdev
     ../modules/lean
+    ../modules/ai
   ];
 
   home.username = "bradyn";
