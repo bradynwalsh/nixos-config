@@ -336,11 +336,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1771709711,
-        "narHash": "sha256-37NXctBn2p2+7K/dptxXY26J3zBwpsRHGSvfQyQsY/8=",
+        "lastModified": 1771803010,
+        "narHash": "sha256-LL9+zk04V1kgJFUCb5LntzgJ2XsZRzgR9zokbRZY/JI=",
         "ref": "refs/heads/main",
-        "rev": "0eb4755a3ed1980c15453fbe73d4ad36dea5da4b",
-        "revCount": 6911,
+        "rev": "b88813c7efa4b7b0c5fe01471c5fa5b67a61dc7e",
+        "revCount": 6914,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -792,11 +792,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1771492583,
-        "narHash": "sha256-nQzvnU4BGu8dA6BsPPCqmVcab/3ebVmHtX3ZWbW3Hxc=",
+        "lastModified": 1771834715,
+        "narHash": "sha256-5VI2KiMifx3Dca7nDJzctO3HpnS6zrvesdkLoZBrQRY=",
         "owner": "nix-community",
         "repo": "lanzaboote",
-        "rev": "5e9380994665ef66c87ab8e22c913ff837174ce4",
+        "rev": "b798c53da0f7e521317a5413335096a21070cf0b",
         "type": "github"
       },
       "original": {
