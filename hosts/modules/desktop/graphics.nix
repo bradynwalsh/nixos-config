@@ -16,6 +16,7 @@
 
   # Install xdg utils
   environment.systemPackages = [
+    pkgs.brightnessctl
     pkgs.xdg-utils
   ];
 
@@ -50,7 +51,4 @@
       "/var/lib/fprint"
     ];
   };
-
-  # Enable changing screen brightness
-  programs.light.enable = true;
 }
