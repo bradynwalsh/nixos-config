@@ -196,6 +196,8 @@
       path = ${./wallpaper.png}
       fit_mode = fill
     }
+
+    splash = false
   '';
 
   config.gtk.iconTheme = {
