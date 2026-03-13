@@ -15,6 +15,8 @@
     pkgs.sops
     pkgs.age
     pkgs.ssh-to-age
+
+    pkgs.wireguard-tools
   ];
 
   users.defaultUserShell = pkgs.fish;
