@@ -25,7 +25,7 @@
             status = "disable";
           }
           {
-            criteria =  "LG Electronics W2353 0x01010101";
+            criteria =  "LG Electronics LG FHD 0x0000D8C8";
             status = "enable";
             position = "0,0";
             mode = "1920x1080@59.94Hz";
