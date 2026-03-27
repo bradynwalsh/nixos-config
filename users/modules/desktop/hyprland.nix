@@ -28,7 +28,6 @@
       "$mod, V, togglefloating"
       "$mod, R, exec, $menu"
       "$mod, P, pseudo"
-      "$mod, J, togglesplit"
       "$shiftMod, PRINT, exec, hyprshot -m region"
     ] ++ (
         # workspaces

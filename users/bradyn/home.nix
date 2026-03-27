@@ -16,6 +16,7 @@
     ../applications/7zip.nix
     ../applications/awscli.nix
     ../applications/zed.nix
+    ../applications/xh.nix
     ../modules/terminal
     ../modules/desktop
     ../modules/kubedev
