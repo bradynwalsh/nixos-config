@@ -96,6 +96,10 @@
       disable_hyprland_logo = true;
       force_default_wallpaper = 0;
     };
+
+    windowrule = [
+      "match:title (.*)(Obsidian)(.*), focus_on_activate on" # Web Clipper fix
+    ];
   };
 
   config.services.hypridle = {
