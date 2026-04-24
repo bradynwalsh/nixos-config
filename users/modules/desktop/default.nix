@@ -14,5 +14,6 @@
     ./bluetooth.nix
     ./kanshi.nix
     ./yubikey.nix
+    ./obsidian.nix
   ];
 }
