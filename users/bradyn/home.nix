@@ -50,9 +50,16 @@
       "Documents"
       ".ssh"
       ".config/discord"
+      ".local/share/keyrings"
       ".cache/flatpak"
       ".local/share/flatpak"
       ".var/app/com.valvesoftware.Steam"
+      ".config/obsidian/Local Storage"
+      ".config/obsidian/IndexedDB"
+    ];
+
+    files = [
+      ".config/obsidian/obsidian.json"
     ];
   };
 }

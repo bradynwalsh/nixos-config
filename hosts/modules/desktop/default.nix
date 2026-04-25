@@ -9,5 +9,6 @@
     ./virtualization.nix
     ./usb.nix
     ./flatpak.nix
+    ./keychain.nix
   ];
 }

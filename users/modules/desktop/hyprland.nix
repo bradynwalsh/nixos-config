@@ -10,11 +10,17 @@
     "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
     "$lock" = "${pkgs.systemd}/bin/loginctl lock-session";
 
-    env = "XCURSOR_SIZE,24";
+    env = [
+      "XCURSOR_SIZE,24"
+      "DESKTOP_SESSION,gnome" # Fix SecretStore/gnome-keyring integration for Electron (Obsidian)
+    ];
 
     exec-once = [
       "hyprpaper"
       "mako"
+      "gnome-keyring-daemon --start --components=secrets"
+      "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
+      "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DESKTOP_SESSION"
     ];
 
     "$mod" = "SUPER";
