@@ -109,11 +109,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1777521781,
-        "narHash": "sha256-bQ9oIcNyHsiagt7yptfe7OmfUDEyuXFUb7ajkrWNzSo=",
+        "lastModified": 1777608175,
+        "narHash": "sha256-h2OfjJd3r0zopvSCN3kD2TPv01oz1pNTxurYucIDI8s=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "8a444a5c02840666c9c2f92042bfbb7a10c68200",
+        "rev": "6c1761398df2be37cffd5891486f15665e18a398",
         "type": "gitlab"
       },
       "original": {
@@ -206,11 +206,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777518431,
-        "narHash": "sha256-SwgiG2T5pbyo33Vz7/vUCAhEMgwCK8Pa2nDSx5a6/WE=",
+        "lastModified": 1777594677,
+        "narHash": "sha256-h90sHwoRJLRvaTpZroTvU2JRHDFj0czUafM8eqLe1RI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "2e54a938cdd4c8e414b2518edc3d82308027c670",
+        "rev": "899c08a15beae5da51a5cecd6b2b994777a948da",
         "type": "github"
       },
       "original": {
@@ -336,11 +336,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777550343,
-        "narHash": "sha256-Ufte7MeTaoq1IaCebyEtEPOM4x0f7VoANzrKqyq9vH0=",
+        "lastModified": 1777636255,
+        "narHash": "sha256-YzzaUb9rHbgZI9zTcYkmqCCb5yNv6X6/LeqdhV/ZUMI=",
         "ref": "refs/heads/main",
-        "rev": "8884b9e6ce608a22c993b1a871e864171626e8e5",
-        "revCount": 7218,
+        "rev": "241eeae51a8570fa48cffc89492b666697c4715f",
+        "revCount": 7227,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -1148,11 +1148,11 @@
         "systems": "systems_12"
       },
       "locked": {
-        "lastModified": 1777160134,
-        "narHash": "sha256-B7nwX0PE0KBo1/ZtuwJtA7dBG6gdPW5tSBb0skY8DHA=",
+        "lastModified": 1777585783,
+        "narHash": "sha256-JTeWRy42VElroJ0rVdZuVXSoTLsx+NzQfGPKMbtn3SU=",
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
-        "rev": "01e13c0a027a2d177df4dead76ac9d069e2cc8e6",
+        "rev": "fa50d6fbaff8f42c61071b87b034a90d82a33558",
         "type": "github"
       },
       "original": {
