@@ -109,11 +109,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1778126577,
-        "narHash": "sha256-t6hAW8FsMNOxtaSxyC/PsxOBlFh37WDQKKcGh8wFS7A=",
+        "lastModified": 1778212976,
+        "narHash": "sha256-ejjsKuq6MOSXRmDCzT/y+lMQm7oNvn+Lv3FmMlhOf0g=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "6a9c13d91f7a44606dae05edd53f00b43b9d7748",
+        "rev": "b3b011df4f9be7848124081577d2ca8f6a3e2c82",
         "type": "gitlab"
       },
       "original": {
@@ -336,11 +336,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778151950,
-        "narHash": "sha256-SwgbcS9qFzTCfhx63x9//CfHXjJuQx0HEZbpluYI6Pw=",
+        "lastModified": 1778199997,
+        "narHash": "sha256-L+jaxpUg7l8dThBsuXddzd5rv1QKMiKLENuwM/aG3aA=",
         "ref": "refs/heads/main",
-        "rev": "6b8b20100253c083227e611be20360f4d8e7794e",
-        "revCount": 7266,
+        "rev": "de9f8dc9831d921cd1ee30d5d14f45f0e345a8ca",
+        "revCount": 7275,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -549,11 +549,11 @@
         "systems": "systems_9"
       },
       "locked": {
-        "lastModified": 1778022123,
-        "narHash": "sha256-Qo9X4tiM855feJwhNaBAS9fN4tjTRUaeRrr8TlgG4q4=",
+        "lastModified": 1778172969,
+        "narHash": "sha256-NJ+5CfTlAA1h/7yRgCtQy3tLHZ/dOtjgQh1qlGftysI=",
         "owner": "hyprwm",
         "repo": "hyprpicker",
-        "rev": "0da95c0eda1a74180568aa074093ef87011d2fbb",
+        "rev": "d6115cad31aab3d537039a817b0590d83833d2a2",
         "type": "github"
       },
       "original": {
@@ -667,11 +667,11 @@
         "systems": "systems_10"
       },
       "locked": {
-        "lastModified": 1777492286,
-        "narHash": "sha256-PwuoEJQcjSKJNP5T55qhfDwIP0tw5zxEhfu8GDfKfeg=",
+        "lastModified": 1778234770,
+        "narHash": "sha256-jAcsogZwWMfXT9MfXxZzkwliAqIuZUV0p71h6Ba9ReE=",
         "owner": "hyprwm",
         "repo": "hyprutils",
-        "rev": "ec5c0c709706bad5b82f667fd8758eae442577ce",
+        "rev": "a2dbd8a4cc51f7cbe4224732668392bb1aa79df2",
         "type": "github"
       },
       "original": {
