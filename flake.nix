@@ -11,6 +11,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    aquamarine = {
+      url = "github:hyprwm/aquamarine";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprutils.follows = "hyprutils";
+      inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+    };
+
     hypridle = {
       url = "github:hyprwm/hypridle";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,6 +36,7 @@
       inputs.xdph.follows = "xdph";
       inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
       inputs.hyprland-protocols.follows = "hyprland-protocols";
+      inputs.aquamarine.follows = "aquamarine";
     };
 
     hyprlang = {
@@ -49,6 +57,7 @@
     hyprpaper = {
       url = "github:hyprwm/hyprpaper";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.aquamarine.follows = "aquamarine";
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprgraphics.follows = "hyprgraphics";
