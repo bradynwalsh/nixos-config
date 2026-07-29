@@ -14,11 +14,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1785170094,
-        "narHash": "sha256-YMh/llUAd7ENxYQozt8oZEUcD9jlZHIKYDVbOeVkh8Y=",
+        "lastModified": 1785271205,
+        "narHash": "sha256-NyB+5bzzUh1yem/76g2syii3MpT0q1QvvSJvj+UTTH4=",
         "owner": "hyprwm",
         "repo": "aquamarine",
-        "rev": "a79fb21b2e2a82dd061a6d071802bcf38bd5c383",
+        "rev": "5ea27f81a3dac099e95b220690dc675de6d8fbd9",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1785211368,
-        "narHash": "sha256-FJFp7T2KGoOhsT0cmXi38bFtrK/fB9jOs3KBoiNz6vQ=",
+        "lastModified": 1785297772,
+        "narHash": "sha256-VO7mKyetwEVjjju/MuoYrkxtDnM9S4D5osTSUrRK7RM=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "854311a577a3646df9175010e943890aceef4d66",
+        "rev": "8f80b35c3761d0b6f3782d3e8a95256877816dcc",
         "type": "gitlab"
       },
       "original": {
@@ -123,11 +123,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785239295,
-        "narHash": "sha256-aYFoftXjm7Df7CAoR0XoMQjJ9rTZ/l9d1jr9EqD7sHM=",
+        "lastModified": 1785306346,
+        "narHash": "sha256-DScBkW0fOgpGPK2trNoX3ryLTlaC14+gglFo/BhGJ4g=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "42bb40f7aaab63a107b64a20c4a4ade6550758d0",
+        "rev": "e705714e918c3b11affcdd15db2cbe3a070420a0",
         "type": "github"
       },
       "original": {
@@ -255,11 +255,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785237127,
-        "narHash": "sha256-M2ktqS/7o1tThairxRh7m5iR6doJktVeypGJE8RebyA=",
+        "lastModified": 1785325775,
+        "narHash": "sha256-8sr2geQ9LEiJFC3cqJHKDCFRPdT3h8T3fnNh/aHYE4o=",
         "ref": "refs/heads/main",
-        "rev": "ff24e1755fd308ee70367d63168a12feb05d1fc2",
-        "revCount": 7664,
+        "rev": "a95b81806c841ea862202c99e2f6fbf5113c988d",
+        "revCount": 7667,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
