@@ -78,6 +78,8 @@
       inputs.hyprlang.follows = "hyprlang";
       inputs.hyprutils.follows = "hyprutils";
       inputs.hyprwayland-scanner.follows = "hyprwayland-scanner";
+      inputs.aquamarine.follows = "aquamarine";
+      inputs.hyprgraphics.follows = "hyprgraphics";
     };
 
     hyprland-protocols = {

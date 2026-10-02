@@ -1,40 +1,114 @@
-{ conifg, lib, pkgs, inputs, ... }:
+{ lib, pkgs, inputs, ... }:
 
 {
   config.wayland.windowManager.hyprland.enable = true;
-  config.wayland.windowManager.hyprland.package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  config.wayland.windowManager.hyprland.package = null;
   config.wayland.windowManager.hyprland.portalPackage = inputs.xdph.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+  config.wayland.windowManager.hyprland.configType = "lua";
 
   config.wayland.windowManager.hyprland.settings = {
-    "$terminal" = "kitty";
-    "$menu" = "wofi --show drun --allow-images --allow-markup -p ''";
-    "$lock" = "${pkgs.systemd}/bin/loginctl lock-session";
+    terminal = {
+      _var = "kitty";
+    };
+
+    menu = {
+      _var = "wofi --show drun --allow-images --allow-markup -p ''";
+    };
+
+    lock = {
+      _var = "${pkgs.systemd}/bin/loginctl lock-session";
+    };
 
     env = [
-      "XCURSOR_SIZE,24"
-      "DESKTOP_SESSION,gnome" # Fix SecretStore/gnome-keyring integration for Electron (Obsidian)
+      { _args = ["XCURSOR_SIZE"  "24"]; }
+      { _args = ["DESKTOP_SESSION" "gnome"]; } # Fix SecretStore/gnome-keyring integration for Electron (Obsidian)
     ];
 
-    exec-once = [
-      "hyprpaper"
-      "mako"
-      "gnome-keyring-daemon --start --components=secrets"
-      "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
-      "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DESKTOP_SESSION"
+    on = [
+      {
+        _args = [
+          "hyprland.start"
+          (lib.generators.mkLuaInline "function() hl.exec_cmd(\"hyprpaper\") end")
+        ];
+      }
+      {
+        _args = [
+          "hyprland.start"
+          (lib.generators.mkLuaInline "function() hl.exec_cmd(\"mako\") end")
+        ];
+      }
+      {
+        _args = [
+          "hyprland.start"
+          (lib.generators.mkLuaInline "function() hl.exec_cmd(\"gnome-keyring-daemon --start --components=secrets\") end")
+        ];
+      }
+      {
+        _args = [
+          "hyprland.start"
+          (lib.generators.mkLuaInline "function() hl.exec_cmd(\"${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1\") end")
+        ];
+      }
+      {
+        _args = [
+          "hyprland.start"
+          (lib.generators.mkLuaInline "function() hl.exec_cmd(\"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DESKTOP_SESSION\") end")
+        ];
+      }
     ];
 
-    "$mod" = "SUPER";
-    "$shiftMod" = "SUPER_SHIFT";
+    mod = { _var = "SUPER"; };
+    shiftMod = { _var = "SUPER + SHIFT"; };
 
     bind = [
-      "$mod, Q, exec, $terminal"
-      "$mod, C, killactive"
-      "$mod, M, exit"
-      "$mod, L, exec, $lock"
-      "$mod, V, togglefloating"
-      "$mod, R, exec, $menu"
-      "$mod, P, pseudo"
-      "$shiftMod, PRINT, exec, hyprshot -m region"
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + Q\"")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(terminal)")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + C\"")
+          (lib.generators.mkLuaInline "hl.dsp.window.close()")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + M\"")
+          (lib.generators.mkLuaInline "hl.dsp.exit()")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + L\"")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(lock)")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + V\"")
+          (lib.generators.mkLuaInline "hl.dsp.window.float({action = \"toggle\" })")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + R\"")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(menu)")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mod .. \" + P\"")
+          (lib.generators.mkLuaInline "hl.dsp.window.pseudo()")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "shiftMod .. \" + PRINT\"")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprshot -m region\")")
+        ];
+      }
     ] ++ (
         # workspaces
         # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
@@ -45,68 +119,108 @@
               in
                 builtins.toString (x + 1 - (c * 10));
             in [
-              "$mod, ${ws}, workspace, ${toString (x + 1)}"
-              "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+              {
+                _args = [
+                  (lib.generators.mkLuaInline "mod .. \" + ${ws}\"")
+                  (lib.generators.mkLuaInline "hl.dsp.focus({workspace = ${toString (x + 1)}})")
+                ];
+              }
+              {
+                _args = [
+                  (lib.generators.mkLuaInline "shiftMod .. \" + ${ws}\"")
+                  (lib.generators.mkLuaInline "hl.dsp.window.move({workspace = ${toString (x + 1)}})")
+                ];
+              }
             ]
           )
           10)
       ) ++ [
-        "$mod, S, togglespecialworkspace, magic"
-        "$mod SHIFT, S, movetoworkspace, special:magic"
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + S\"")
+            (lib.generators.mkLuaInline "hl.dsp.workspace.toggle_special(\"magic\")")
+          ];
+        }
+        {
+          _args = [
+            (lib.generators.mkLuaInline "shiftMod .. \" + S\"")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({workspace = \"special:magic\"})")
+          ];
+        }
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + mouse:272\"")
+            (lib.generators.mkLuaInline "hl.dsp.window.drag()")
+            (lib.generators.mkLuaInline "{ mouse = true }")
+          ];
+        }
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + mouse:273\"")
+            (lib.generators.mkLuaInline "hl.dsp.window.resize()")
+            (lib.generators.mkLuaInline "{ mouse = true }")
+          ];
+        }
       ];
-
-    bindm = [
-      "$mod, mouse:272, movewindow"
-      "$mod, mouse:273, resizewindow"
-    ];
-
-    monitor = [
-      ",highres,auto,1"
-    ];
-
-    general = {
-      gaps_in = 5;
-      gaps_out = 20;
-
-      border_size = 2;
-
-      "col.active_border"   = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-      "col.inactive_border" = "rgba(595959aa)";
-
-      layout = "dwindle";
-    };
-
-    decoration = {
-      rounding = 10;
-
-      blur = {
-        enabled = true;
-        size = 3;
-        passes = 1;
-        vibrancy = 0.1696;
-      };
-
-      shadow = {
-        enabled = true;
-        range = 4;
-        render_power = 3;
-        color = "rgba(1a1a1aee)";
-      };
-    };
-
-    ecosystem = {
-      no_update_news = true;
-    };
-
-    misc = {
-      disable_hyprland_logo = true;
-      force_default_wallpaper = 0;
-    };
-
-    windowrule = [
-      "match:title (.*)(Obsidian)(.*), focus_on_activate on" # Web Clipper fix
-    ];
   };
+
+  config.wayland.windowManager.hyprland.extraConfig = ''
+    hl.monitor({
+      output = "",
+      mode = "highres",
+      position = "auto",
+      scale = 1
+    })
+
+    hl.config({
+      general = {
+        gaps_in = 5,
+        gaps_out = 20,
+        border_size = 2,
+        layout = "dwindle",
+        col = {
+          active_border = {
+            colors = {
+              "rgba(33ccffee)",
+              "rgba(00ff99ee)"
+            },
+            angle = 45
+          },
+          inactive_border = "rgba(595959aa)"
+        }
+      },
+      decoration = {
+        rounding = 10,
+        blur = {
+          enabled = true,
+          size = 3,
+          passes = 1,
+          vibrancy = 0.1696,
+        },
+        shadow = {
+          enabled = true,
+          range = 4,
+          render_power = 3,
+          color = "rgba(1a1a1aee)",
+        }
+      },
+      ecosystem = {
+        no_update_news = true
+      },
+      misc = {
+        disable_hyprland_logo = true,
+        force_default_wallpaper = 0
+      }
+    })
+
+    hl.window_rule({
+      name = "Obsidian_Web_Clipper_Fix",
+      match = {
+        title = "(.*)(Obsidian)(.*)"
+      },
+      focus_on_activate = true
+    })
+  '';
 
   config.services.hypridle = {
     enable = true;
