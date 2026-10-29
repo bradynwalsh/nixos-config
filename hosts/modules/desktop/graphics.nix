@@ -3,7 +3,6 @@
 {
   # Graphical boot process
   boot.plymouth.enable = true;
-  boot.initrd.verbose = false;
   boot.consoleLogLevel = 0;
   boot.kernelParams = [ "quiet" "udev.log_level=3" ];
 
@@ -25,6 +24,9 @@
 
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
+
+  # Thumbnails
+  services.tumbler.enable = true;
 
   # Use tuigreet
   services.greetd = {
