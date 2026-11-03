@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1793592178,
-        "narHash": "sha256-DtI8GRZe9cU9ZYdDPwHGWFN+aMsloMi8PodEjy5r1rA=",
+        "lastModified": 1793678573,
+        "narHash": "sha256-4Fk565Lb8NjMF+UMUCJ6hMCzOfqfLB7VzeOTXyZUnmY=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "a4dff67df49f47f4f1e59afb6a335dea1c1daf7a",
+        "rev": "fc24eaa9c142e608b2158955eca049d9228fd463",
         "type": "gitlab"
       },
       "original": {
@@ -209,11 +209,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1786465315,
-        "narHash": "sha256-+qflH9Z86YZqL69GMC8fAc6Crw0pAbMqgCUibo+iL3A=",
+        "lastModified": 1793718636,
+        "narHash": "sha256-j+X/1w2MD2r6636N1F43qYiwYrFYzDKRhUdj1b4TFUQ=",
         "owner": "hyprwm",
         "repo": "hypridle",
-        "rev": "aa958ed7ad4863860b93ecd7189419e193bfae2c",
+        "rev": "39792ac3fac61b37be41c057bf46146ec21cf8fa",
         "type": "github"
       },
       "original": {
@@ -256,11 +256,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793642239,
-        "narHash": "sha256-90dSjKddQCbyF83MYJcxC2hNFlucawLUvOcximZHBiE=",
+        "lastModified": 1793718629,
+        "narHash": "sha256-8vR/y3gUefweVx5FVXlO0CsF2a3YT06dN34o5mq96Hg=",
         "ref": "refs/heads/main",
-        "rev": "e93501dd1bfeabf6206cdaebd853008d47a7dcc1",
-        "revCount": 7999,
+        "rev": "7cc61bc9a0b00ea90cfcb1055227f0937c527d32",
+        "revCount": 8001,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -409,11 +409,11 @@
         "systems": "systems_8"
       },
       "locked": {
-        "lastModified": 1793624803,
-        "narHash": "sha256-uoA4qDyq4PgYbpbR/O0HbItAkMfJod+CpjUDfeXUWKw=",
+        "lastModified": 1793718643,
+        "narHash": "sha256-decMelYn/dwYtNakVIa8wpA/6U0otDscX8WDau0a8js=",
         "owner": "hyprwm",
         "repo": "hyprlock",
-        "rev": "69dc06ac0e04c75a95b1ffdf71992bfb03663c3f",
+        "rev": "73969a083e28f5c58428c7239f7b44c32e5fe996",
         "type": "github"
       },
       "original": {
@@ -913,11 +913,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793052255,
-        "narHash": "sha256-Y/JIHTnMlOabDfyaSBubWGLDIVGihLEUuoMhFvQKaDo=",
+        "lastModified": 1793657466,
+        "narHash": "sha256-GoOvpdsjO5hqZuO6T6ok9u6sJEjO0iPli2zRr9oNUNw=",
         "owner": "Mic92",
         "repo": "sops-nix",
-        "rev": "60182817ee048ac94b4c68ea76d5ef2e8aac730d",
+        "rev": "b18e01ce148eb3efff5de2f2d3181ca53b2b2a54",
         "type": "github"
       },
       "original": {
