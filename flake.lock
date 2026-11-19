@@ -14,11 +14,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1795001268,
-        "narHash": "sha256-wLGkZP+AJjtq063J6S0p2EBUqTXg2XaV9g9pIxClhdo=",
+        "lastModified": 1795113660,
+        "narHash": "sha256-ipri083eApzyim9AYibzp0oSj/wMahdsLveyKd38RKY=",
         "owner": "hyprwm",
         "repo": "aquamarine",
-        "rev": "2e77bc4c96bf45bcc5b167dd5da5556ed6b882ce",
+        "rev": "8126552b0d3c1717f92867772ec573d3d2ae8a20",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1794974661,
-        "narHash": "sha256-oAwbSLudpMl5wcjNB5PJXpuNGHUm6UXHHh9by0DWCRQ=",
+        "lastModified": 1795060987,
+        "narHash": "sha256-s6upKTApq3l2JzGsW+bhBqtAvyU8PU9zMHDTIe3UxZU=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "27ee25a13af7017f895b5d5af9e4c5e1fd6e0f69",
+        "rev": "928b5b572e3703f1ccaf833ca0a544c6440c598e",
         "type": "gitlab"
       },
       "original": {
@@ -256,11 +256,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795001954,
-        "narHash": "sha256-3vkJ4/gKVGyzVfICpdY+kFSdQAr91FQVRlIttfE/LCU=",
+        "lastModified": 1795113678,
+        "narHash": "sha256-mCHHaUzFTuuv5j6G7fhLOvMWNpsLmxfXNVFyLJQfWHE=",
         "ref": "refs/heads/main",
-        "rev": "5177d94ed31742849d9654da1d9d50e5ad05e26d",
-        "revCount": 8118,
+        "rev": "489b111974fc1ecf7f4cd84e7d995ce84804e11e",
+        "revCount": 8139,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -630,11 +630,11 @@
         "systems": "systems_11"
       },
       "locked": {
-        "lastModified": 1795001098,
-        "narHash": "sha256-5mHGxkt51BeU/KIGvUa4FCzql/piEIc70HTtHuYuZc4=",
+        "lastModified": 1795105234,
+        "narHash": "sha256-kKiRZgXXeYmDD0riMalYSHbpHv8741Qm88yVbgmi4Ms=",
         "owner": "hyprwm",
         "repo": "hyprutils",
-        "rev": "6c20321f3b6c6105e5b720edc3266dbf40fef0e8",
+        "rev": "1bcbf83d34e4679f534ed4fac5ac4d7a683df3d8",
         "type": "github"
       },
       "original": {
